@@ -4,7 +4,7 @@ const app = express(); // make a new app
 const server = require("http").Server(app); // and create an http server for the app
 const io = require("socket.io")(server); // then create a socket using that server that clients can connect to
 
-const port = 3000; // specify the port where communication will happen
+const port = process.env.PORT || 3000; // specify the port where communication will happen
 
 let waitingUser;
 /*let prompt = "what change have you made that would surprise a past version of you?";
