@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>embrce</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's client-side javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="instruction" style="display:none;">
+      <p>
+        Thank you for a moment of vulnerability.
+        <br /><br />
+        If you so choose, hold the screen to seek out a true human connection.
+        Allow your words to be caressed and spoken into the material world.
+      </p>
+      <button id="reach">okay</button>
+    </div>
+    <div id="overlay">
+      
+    </div>
+    <p id="promptAgain">what lessons can you learn from your 8 year old self?</p>
+    <div id="status">
+      <button id="affirm">release and refresh</button>
+      <p id="statusText">hold screen to connect</p>
+    </div>
+    <div id="introscreen">
+      <div id="content">
+        <h3>EMBRCE</h3>
+        <h2 id="prompt"></h2>
+        <p id="placeholder">
+          tap to respond
+        </p>
+      </div>
+      <div id="inputDiv" contenteditable="true">
+      </div>
+      <button id="release" disabled>release to the void</button>
+      <span id="cursor">|</span>
+      <div id="footer"><a href="about.html">what is this page?</a></div>
+    </div>
+  </body>
+</html>
+
+<!--do multiple divs for the different stages-->
